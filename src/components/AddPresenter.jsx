@@ -35,7 +35,16 @@ const AddPresenter = () => {
   const [phoneError, setPhoneError] = useState("");
   const [formValid, setFormValid] = useState(false);
   let navigate = useNavigate();
+  useEffect(() => {
+    const isNameValid = validateName();
+    const isUsernameValid = validateUsername();
+    const isEmailValid = validateEmail();
+    const isPhoneValid = validatePhone();
 
+    setFormValid(
+      isNameValid && isUsernameValid && isEmailValid && isPhoneValid
+    );
+  }, [presenter]);
   const validateName = () => {
     if (name.trim() === "") {
       setNameError("Name is required");
@@ -103,7 +112,7 @@ const AddPresenter = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    validateForm();
+    await validateForm();
     if (formValid) {
       await addPresenter(presenter);
       navigate("/");

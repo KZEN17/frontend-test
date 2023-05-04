@@ -66,6 +66,41 @@
       "email": "petre@.p.com",
       "phone": "+97366706021",
       "id": 16
+    },
+    {
+      "name": "John Smith",
+      "username": "Johny",
+      "email": "j@john.com",
+      "phone": "1234567890",
+      "id": 17
+    },
+    {
+      "name": "cvete",
+      "username": "cvete",
+      "email": "cvet@cvet.com",
+      "phone": "1234567890",
+      "id": 18
+    },
+    {
+      "name": "koki",
+      "username": "koki",
+      "email": "kok@koki.com",
+      "phone": "1234567890",
+      "id": 19
+    },
+    {
+      "name": "mai",
+      "username": "mai",
+      "email": "mai@mai.com",
+      "phone": "1234567890",
+      "id": 20
+    },
+    {
+      "name": "vik",
+      "username": "vik",
+      "email": "v@v.com",
+      "phone": "1234567890",
+      "id": 21
     }
   ],
   "tables": [
